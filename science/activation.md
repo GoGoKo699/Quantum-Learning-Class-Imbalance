@@ -25,9 +25,9 @@ Work on the supplied program support
 ```math
 \mathcal H
 =
-\operatorname{Sym}^{n}(\mathbb C^2)_A
+\mathrm{Sym}^{n}(\mathbb C^2)_A
 \otimes\mathbb C^2_B
-\otimes\operatorname{Sym}^{n}(\mathbb C^2)_C.
+\otimes\mathrm{Sym}^{n}(\mathbb C^2)_C.
 ```
 
 Let $`P_k`$ denote the projector onto the symmetric subspace of $`k`$ qubits, and set $`\kappa_n=1/[(n+1)(n+2)]`$. Haar integration gives the normalized hypothesis states
@@ -41,7 +41,7 @@ Let $`P_k`$ denote the projector onto the symmetric subspace of $`k`$ qubits, an
 The identities are on the already symmetric training supports. Put $`\Delta=p\sigma_0-q\sigma_1`$. If $`E`$ is the effect for outputting label $`1`$, its error probability is
 
 ```math
-R(E)=q+\operatorname{Tr}(E\Delta),
+R(E)=q+\mathrm{Tr}(E\Delta),
 \qquad 0\leq E\leq I.
 ```
 
@@ -64,7 +64,7 @@ It is enough to prove that no globally optimal effect belongs to $`\mathcal P`$.
 
 ## A three-dimensional obstruction for every training size
 
-By exchanging the labels, assume $`p>q>0`$, and write $`t=p-q>0`$. Let $`|\Omega\rangle`$ be the all-up state of the $`2n+1`$ qubits. Both symmetric projectors fix it, so
+By exchanging the labels, assume $`p\gt q\gt 0`$, and write $`t=p-q\gt 0`$. Let $`|\Omega\rangle`$ be the all-up state of the $`2n+1`$ qubits. Both symmetric projectors fix it, so
 
 ```math
 \Delta|\Omega\rangle=\kappa_n t|\Omega\rangle.
@@ -96,7 +96,7 @@ The vector $`(\sqrt n,1,\sqrt n)`$ has eigenvalue $`t`$. The other two eigenvalu
 \sqrt{1-4pq\,n^2/(n+1)^2}}{2}.
 ```
 
-Because $`0<p,q<1`$ and $`n/(n+1)<1`$, one has $`\lambda_-<0<\lambda_+`$. Thus the optimal restriction of $`E`$ to $`W`$ is the rank-one projector $`|w\rangle\langle w|`$ onto the negative eigenvector.
+Because $`0\lt p,q\lt 1`$ and $`n/(n+1)\lt 1`$, one has $`\lambda_-\lt 0\lt \lambda_+`$. Thus the optimal restriction of $`E`$ to $`W`$ is the rank-one projector $`|w\rangle\langle w|`$ onto the negative eigenvector.
 
 All three components of $`w`$ are nonzero. Indeed, if $`w_B=0`$, the middle row forces $`pw_A=qw_C`$. Neither remaining component can vanish. The first and third rows would then require their diagonal entries to agree, whereas their difference is $`-1/(n+1)`$. This is a contradiction. Once $`w_B\ne0`$, the first and third rows imply $`w_A,w_C\ne0`$.
 
@@ -133,7 +133,7 @@ The continuous risk functional attains a minimum on the compact set $`\mathcal P
 ```math
 R_{\rm C}
 \geq \min_{E\in\mathcal P}R(E)
->
+\gt 
 R_{\rm Q}.
 ```
 

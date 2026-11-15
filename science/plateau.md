@@ -22,7 +22,7 @@ D_C(n,s)=D_0(n)\qquad(0\leq s\leq s_0(n)).
 K_0=Y_0^{-1/2}H_0^{(0)}Y_0^{-1/2}.
 ```
 
-It is real symmetric, entrywise nonnegative and bipartite. Its positive vector $`Y_0^{1/2}\phi`$ has eigenvalue one. The Laplacian inequality also gives $`K_0\preceq I`$. Bipartiteness reflects its spectrum around zero; hence $`\|K_0\|=1`$.
+It is real symmetric, entrywise nonnegative and bipartite. Its positive vector $`Y_0^{1/2}\phi`$ has eigenvalue one. The Laplacian inequality also gives $`K_0\preceq I`$. Bipartiteness reflects its spectrum around zero; hence $`\lVert K_0\rVert=1`$.
 
 For a fixed nonzero magnetic number $`m`$, its normalized adjacency matrix $`K_m`$ has a smaller index range and offdiagonal ratios
 
@@ -47,14 +47,14 @@ Y_0-H_0^{(m)}
 \succeq\frac{m^2y_{\min}}{2n^2}I.
 ```
 
-The prevalence perturbation in this block is the scalar $`sm/(n+2)`$. For $`m>0`$, the assumed bound $`s\leq(n+2)y_{\min}/(2n^2)`$ implies
+The prevalence perturbation in this block is the scalar $`sm/(n+2)`$. For $`m\gt 0`$, the assumed bound $`s\leq(n+2)y_{\min}/(2n^2)`$ implies
 
 ```math
 \frac{sm}{n+2}\leq\frac{my_{\min}}{2n^2}
 \leq\frac{m^2y_{\min}}{2n^2}.
 ```
 
-For $`m<0`$ the perturbation improves the inequality, and for $`m=0`$ it vanishes. Thus $`Y_0\succeq H_z(s)`$. The other dual constraint $`Y_0\succeq sI`$ follows from $`s\leq y_{\min}`$. This proves the upper bound $`D_C(n,s)\leq D_0(n)`$.
+For $`m\lt 0`$ the perturbation improves the inequality, and for $`m=0`$ it vanishes. Thus $`Y_0\succeq H_z(s)`$. The other dual constraint $`Y_0\succeq sI`$ follows from $`s\leq y_{\min}`$. This proves the upper bound $`D_C(n,s)\leq D_0(n)`$.
 
 The same covariant seed $`v`$ has $`m=0`$, so its aligned payoff $`\langle v|H_z(s)|v\rangle`$ remains $`D_0(n)`$. It supplies the reverse inequality. Hence equality holds throughout the stated interval. $`\square`$
 

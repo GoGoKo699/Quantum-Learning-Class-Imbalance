@@ -26,20 +26,20 @@ Watrous uses vector/operator notation rather than Dirac notation.
 | Textbook notation or convention | Translation here |
 |---|---|
 | A unit column vector $`u`$ and $`uu^*`$ | $`\lvert\psi\rangle`$ and $`P_\psi=\lvert\psi\rangle\langle\psi\rvert`$. The star denotes conjugate transpose. |
-| $`\mathrm D(\mathcal X)`$ and $`\operatorname{Pos}(\mathcal X)`$ | Density operators and positive semidefinite operators. A POVM effect need not have trace one. |
+| $`\mathrm D(\mathcal X)`$ and $`\mathrm{Pos}(\mathcal X)`$ | Density operators and positive semidefinite operators. A POVM effect need not have trace one. |
 | A measurement $`\mu(a)`$ | $`L_y`$ for training, then $`D_{i\mid y}`$ for the test. |
 | The prior $`\lambda`$ in Theorem3.4 | $`p`$ for class0 and $`q=1-p`$ for class1. The prior is known before training and is separate from the fixed training counts. |
 | Generic known hypotheses $`\rho_0,\rho_1`$ | The Haar-averaged program-plus-test operators $`\sigma_0,\sigma_1`$. The particular unknown prototypes remain $`P_0,P_1`$. |
-| $`\langle A,B\rangle=\operatorname{Tr}(A^*B)`$ | For a Hermitian effect and state, the Born probability is $`\operatorname{Tr}(E\rho)`$. |
+| $`\langle A,B\rangle=\mathrm{Tr}(A^*B)`$ | For a Hermitian effect and state, the Born probability is $`\mathrm{Tr}(E\rho)`$. |
 | Raw trace norm $`\lVert X\rVert_1`$ | Classification bias uses this norm directly. The state trace distance in the noise bound includes a factor $`1/2`$. |
 | Partial transpose of one factor | $`T_B`$ transposes the test across $`AC:B`$. Transposing the other factor gives the equivalent PPT criterion. |
 
 The textbook theorem gives success; the project reports error:
 
 ```math
-P_{\rm success}=\frac{1+\|p\sigma_0-q\sigma_1\|_1}{2},
+P_{\rm success}=\frac{1+\lVert p\sigma_0-q\sigma_1\rVert_1}{2},
 \qquad
-R_{\rm Q}=\frac{1-\|p\sigma_0-q\sigma_1\|_1}{2}.
+R_{\rm Q}=\frac{1-\lVert p\sigma_0-q\sigma_1\rVert_1}{2}.
 ```
 
 The symbols $`D_{\rm C},D_{\rm Q}`$ are scalar biases. In the asymptotic proof $`D=|p\mathbf r_0-q\mathbf r_1|`$ is the known-prototype decision length. Neither is the textbook state set $`\mathrm D(\mathcal X)`$.
@@ -91,10 +91,10 @@ The [asymptotic proof](../science/asymptotic.md) supplies the pure-pair coordina
 M10–M11 introduce estimating a decision axis and paying for incompatible tangent information. M20–M23 return to the full proof, retaining compact parameter patches, a smooth covariance field, additional counted data, ordered limits and Haar-prior reassembly. Write $`s=|2p-1|`$; $`I(s)`$ is the mean known-prototype Helstrom bias and $`A(s)`$ is the positive lower coefficient defined in that proof. The conclusion is
 
 ```math
-\liminf_{n\to\infty}n(R_{\rm C}-R_{\rm Q})\geq A(s)>0,
+\liminf_{n\to\infty}n(R_{\rm C}-R_{\rm Q})\geq A(s)\gt 0,
 \qquad
 R_{\rm C}-R_{\rm Q}\leq\frac{I(s)}{n+2},
-\quad\text{for each fixed }0<s<1.
+\quad\text{for each fixed }0\lt s\lt 1.
 ```
 
 It proves the order $`\Theta_s(1/n)`$. The exact leading coefficient and a uniform crossover as $`s`$ changes with $`n`$ remain open.

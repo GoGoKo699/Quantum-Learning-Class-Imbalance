@@ -40,7 +40,7 @@ R_C^\eta-R_Q^\eta
 \geq (R_C^0-R_Q^0)-\frac{(2n+1)\eta}{2}.
 ```
 
-A certified pure-state gap $`\gamma`$ remains positive whenever $`\delta_n(\eta)<\gamma`$; the simpler sufficient condition is $`\eta<2\gamma/(2n+1)`$. On the proven plateau, $`\eta<2s/[(n+2)(2n+1)]`$ is sufficient.
+A certified pure-state gap $`\gamma`$ remains positive whenever $`\delta_n(\eta)\lt \gamma`$; the simpler sufficient condition is $`\eta\lt 2\gamma/(2n+1)`$. On the proven plateau, $`\eta\lt 2s/[(n+2)(2n+1)]`$ is sufficient.
 
 As a concrete small example, the exact $`n=1`$ formulas at $`p=3/5`$ give
 

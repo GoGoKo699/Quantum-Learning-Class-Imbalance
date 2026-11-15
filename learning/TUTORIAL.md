@@ -177,7 +177,7 @@ The project gives explicit constants for $`s_0(n)`$. It is a sufficient plateau,
 
 **Milestone connections:** M20–M23.
 
-A different question fixes $`0<s<1`$ and then increases $`n`$. The known-prototype oracle receives exact descriptions of both sources, a stronger input than either learner. Subtracting its error separates irreducible test ambiguity from the cost of learning the decision.
+A different question fixes $`0\lt s\lt 1`$ and then increases $`n`$. The known-prototype oracle receives exact descriptions of both sources, a stronger input than either learner. Subtracting its error separates irreducible test ambiguity from the cost of learning the decision.
 
 Locally, let $`\mathbf r_0,\mathbf r_1`$ be the unit source Bloch directions and put
 
@@ -194,7 +194,7 @@ Both unknown prototypes still contribute their tangent parameters. The response-
 After integration and comparison with the exact coherent benchmark,
 
 ```math
-\liminf_{n\to\infty}n(R_C-R_Q)\geq A(s)>0,
+\liminf_{n\to\infty}n(R_C-R_Q)\geq A(s)\gt 0,
 \qquad
 R_C-R_Q\leq\frac{I(s)}{n+2},
 ```
@@ -226,7 +226,7 @@ q\leq\frac1{n+2}.
 
 Below the threshold the majority decision is unique. At equality a posterior weighted difference can have a zero eigenvalue, permitting minority predictions that tie the same total error through balancing false positives. Equality of risks does not imply uniqueness of the decision.
 
-For a fixed fraction $`0<\beta<1/2`$, ask for $`R\leq(1-\beta)q`$ as $`q`$ decreases. The threshold lower bound and an attaining-order classical strategy give a necessary and sufficient order of $`1/q`$ training copies per class. In contrast, the established coherent comparison test with $`n`$ retained majority references has risk
+For a fixed fraction $`0\lt \beta\lt 1/2`$, ask for $`R\leq(1-\beta)q`$ as $`q`$ decreases. The threshold lower bound and an attaining-order classical strategy give a necessary and sufficient order of $`1/q`$ training copies per class. In contrast, the established coherent comparison test with $`n`$ retained majority references has risk
 
 ```math
 R_{\rm comparison}=q\frac{n+2}{2(n+1)}.

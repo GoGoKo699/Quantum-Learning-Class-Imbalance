@@ -324,7 +324,7 @@ Dependencies name earlier milestones only. Source pointers lead to the canonical
 
 **Central question:** What is established about the large-training memory penalty after integration and comparison?
 
-**Understanding target:** Combine the integrated Holevo lower bound, the convergent retained expansion, and a feasible classical upper bound to obtain $`R_C-R_Q=\Theta_s(1/n)`$ for fixed $`0<s<1`$. Read $`A(s)`$ as a positive liminf lower coefficient, rather than the exact optimal coefficient.
+**Understanding target:** Combine the integrated Holevo lower bound, the convergent retained expansion, and a feasible classical upper bound to obtain $`R_C-R_Q=\Theta_s(1/n)`$ for fixed $`0\lt s\lt 1`$. Read $`A(s)`$ as a positive liminf lower coefficient, rather than the exact optimal coefficient.
 
 **Dependencies and story role:** M19–M22. Integrates the asymptotic argument into a complete order statement with its unresolved coefficient visible.
 
@@ -352,7 +352,7 @@ Dependencies name earlier milestones only. Source pointers lead to the canonical
 
 **Central question:** How many training specimens are required to reduce a rare class's small baseline error by a fixed fraction?
 
-**Understanding target:** For each fixed target fraction $`0<\eta<1/2`$, combine the arbitrary-classical-training lower bound with an estimating strategy to obtain $`\Theta_\eta(1/q)`$ copies per class. Explain why an established coherent state-comparison test attains the same target with a constant number of retained majority references, and keep the vanishing absolute contrast visible.
+**Understanding target:** For each fixed target fraction $`0\lt \eta\lt 1/2`$, combine the arbitrary-classical-training lower bound with an estimating strategy to obtain $`\Theta_\eta(1/q)`$ copies per class. Explain why an established coherent state-comparison test attains the same target with a constant number of retained majority references, and keep the vanishing absolute contrast visible.
 
 **Dependencies and story role:** M03–M04, M24. Converts the rare-risk threshold into a resource comparison under a matched relative-error target.
 

@@ -42,15 +42,15 @@ $`P_j`$ denotes the projector onto $`\mathcal H_j`$.
 For any training POVM outcome with nonzero effect $`E`$, its probability is
 
 ```math
-w_E=\frac{\operatorname{Tr}E}{d_T}.
+w_E=\frac{\mathrm{Tr}E}{d_T}.
 ```
 
 This is independent of the future test label. The two conditional test states have Bloch vectors
 
 ```math
-\mu_0(E)=\frac{2}{n+2}\frac{\operatorname{Tr}(E\mathbf J_A)}{\operatorname{Tr}E},
+\mu_0(E)=\frac{2}{n+2}\frac{\mathrm{Tr}(E\mathbf J_A)}{\mathrm{Tr}E},
 \qquad
-\mu_1(E)=\frac{2}{n+2}\frac{\operatorname{Tr}(E\mathbf J_C)}{\operatorname{Tr}E}.
+\mu_1(E)=\frac{2}{n+2}\frac{\mathrm{Tr}(E\mathbf J_C)}{\mathrm{Tr}E}.
 ```
 
 To verify these identities, use
@@ -58,7 +58,7 @@ To verify these identities, use
 ```math
 \int\psi^{\otimes n}\,d\psi=\frac{I_{\rm sym}}{n+1},
 \qquad
-\int\psi^{\otimes n}\operatorname{Tr}(\psi\sigma_u)\,d\psi
+\int\psi^{\otimes n}\mathrm{Tr}(\psi\sigma_u)\,d\psi
 =\frac{2J^u}{(n+1)(n+2)}.
 ```
 
@@ -76,11 +76,11 @@ Define the training operators
 H_u(s)=\frac{2(pJ_A^u-qJ_C^u)}{n+2}.
 ```
 
-The two available actions for a training outcome are therefore: always guess the majority, with payoff $`s\operatorname{Tr}E`$; or choose a test Stern–Gerlach direction $`u`$, with payoff $`\operatorname{Tr}(EH_u)`$. Optimizing all training outcomes gives the exact primal problem
+The two available actions for a training outcome are therefore: always guess the majority, with payoff $`s\mathrm{Tr}E`$; or choose a test Stern–Gerlach direction $`u`$, with payoff $`\mathrm{Tr}(EH_u)`$. Optimizing all training outcomes gives the exact primal problem
 
 ```math
 D_C(n,s)=\frac1{d_T}\sup
-\left\{s\operatorname{Tr}E_0+\sum_a\operatorname{Tr}(E_aH_{u_a}(s)):
+\left\{s\mathrm{Tr}E_0+\sum_a\mathrm{Tr}(E_aH_{u_a}(s)):
 E_0,E_a\succeq0,\ E_0+\sum_aE_a=I\right\}.
 ```
 
@@ -89,7 +89,7 @@ Allowing general measures over directions gives the same optimum. It is attained
 The dual problem is
 
 ```math
-D_C(n,s)=\frac1{d_T}\min_Y\operatorname{Tr}Y,
+D_C(n,s)=\frac1{d_T}\min_Y\mathrm{Tr}Y,
 \qquad Y\succeq sI,\quad Y\succeq H_u(s)\ \text{for every }u.
 ```
 
@@ -178,7 +178,7 @@ Terms with a zero square root vanish. Let
 
 ```math
 Y_0=\sum_{j=0}^ny_jP_j,
-\qquad y_{\min}=\min_jy_j>0.
+\qquad y_{\min}=\min_jy_j\gt 0.
 ```
 
 In the $`m=0`$ block, $`y_j=(H_0\phi)_j/\phi_j`$. Thus, writing $`x_j=\phi_jz_j`$,
@@ -213,7 +213,7 @@ The effects $`d_TU_g|v\rangle\langle v|U_g^\dagger dg`$ therefore form a POVM. O
 \sum_{j=1}^nj\sqrt{(n+1)^2-j^2}.
 ```
 
-This equals $`\operatorname{Tr}Y_0/d_T`$, proving optimality. The continuous orbit is optional. Since $`I/d_T`$ lies in the convex hull of the orbit projectors, at most $`d_T^2`$ weighted orbit points reproduce its average exactly; every such point has the same aligned payoff. This supplies a finite attaining POVM with the same risk.
+This equals $`\mathrm{Tr}Y_0/d_T`$, proving optimality. The continuous orbit is optional. Since $`I/d_T`$ lies in the convex hull of the orbit projectors, at most $`d_T^2`$ weighted orbit points reproduce its average exactly; every such point has the same aligned payoff. This supplies a finite attaining POVM with the same risk.
 
 Write the balanced optimum as
 

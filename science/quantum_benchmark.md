@@ -12,7 +12,7 @@ On the symmetric program support, the averaged hypotheses are
 \sigma_1=\frac{I_A\otimes P_{\rm sym}^{BC}}{(n+1)(n+2)}.
 ```
 
-The projectors symmetrize $`n+1`$ qubits. The identities act on $`n`$-qubit symmetric spaces of dimension $`n+1`$. Put $`\Delta=p\sigma_0-q\sigma_1`$ and $`s=|p-q|`$. Helstrom's formula gives $`D_{\rm Q}=\|\Delta\|_1`$.
+The projectors symmetrize $`n+1`$ qubits. The identities act on $`n`$-qubit symmetric spaces of dimension $`n+1`$. Put $`\Delta=p\sigma_0-q\sigma_1`$ and $`s=|p-q|`$. Helstrom's formula gives $`D_{\rm Q}=\lVert\Delta\rVert_1`$.
 
 Coupling the two spin-$`n/2`$ program representations with the spin-$`1/2`$ test gives the globally symmetric sector of dimension $`2n+2`$, and two-dimensional multiplicity blocks at total spin $`k-1/2`$, for $`k=1,\ldots,n`$. The two symmetric coupling schemes have rank-one projectors in each such block, with overlap $`k/(n+1)`$. This Clebsch–Gordan/Jordan overlap is the standard programmable-discrimination ingredient.
 
@@ -22,7 +22,7 @@ For normalized vectors with overlap $`c`$, the two eigenvalues of $`p|a\rangle\l
 \frac{p-q\pm\sqrt{1-4pq\,c^2}}2.
 ```
 
-For $`c<1`$ and interior priors they have opposite signs, so their absolute sum is the square root. Include the spin degeneracy $`2k`$ and the common normalization. The top sector contributes $`2s/(n+2)`$. Therefore
+For $`c\lt 1`$ and interior priors they have opposite signs, so their absolute sum is the square root. Include the spin degeneracy $`2k`$ and the common normalization. The top sector contributes $`2s/(n+2)`$. Therefore
 
 ```math
 D_{\rm Q}(n,s)=\frac{2s}{n+2}
@@ -60,7 +60,7 @@ R_{\rm or}(s)=\frac{1-I(s)}2.
 
 Use the continuous endpoint values. In particular $`I(0)=2/3`$ and $`I(1)=1`$.
 
-For every fixed $`0<s<1`$, set $`N=n+1`$ and apply Euler–Maclaurin to the smooth function $`f(x)=2x\sqrt{1-(1-s^2)x^2}`$. Since $`f(0)=0`$ and $`f(1)=2s`$,
+For every fixed $`0\lt s\lt 1`$, set $`N=n+1`$ and apply Euler–Maclaurin to the smooth function $`f(x)=2x\sqrt{1-(1-s^2)x^2}`$. Since $`f(0)=0`$ and $`f(1)=2s`$,
 
 ```math
 \sum_{k=1}^{N-1} f(k/N)

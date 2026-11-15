@@ -14,7 +14,7 @@ q\leq\frac1{n+2}.
 
 For $`n=0`$, both sides hold for every $`q\leq1/2`$. For $`n\geq1`$, the inequality is sharp: above the threshold some measured-training classifier strictly improves on always choosing the majority label.
 
-At strict $`q<1/(n+2)`$, the majority decision is forced at every training outcome of nonzero probability. At equality, the optimum risk is still $`q`$, but zero posterior eigenvalues allow some minority decisions that tie that risk. Thus the equality case does not imply zero minority recall.
+At strict $`q\lt 1/(n+2)`$, the majority decision is forced at every training outcome of nonzero probability. At equality, the optimum risk is still $`q`$, but zero posterior eigenvalues allow some minority decisions that tie that risk. Thus the equality case does not imply zero minority recall.
 
 Equivalently, if $`p/q\geq n+1`$, even an arbitrary collective training measurement followed by unlimited classical storage cannot improve the minimum total error over the majority-only rule.
 
@@ -36,14 +36,14 @@ Consequently, for every nonzero-probability outcome,
 a_{y,i}
 =
 \frac2{n+2}
-\frac{\operatorname{Tr}[L_y(J_{A,i}\otimes I_C)]}
-{\operatorname{Tr}L_y},
+\frac{\mathrm{Tr}[L_y(J_{A,i}\otimes I_C)]}
+{\mathrm{Tr}L_y},
 \qquad
 c_{y,i}
 =
 \frac2{n+2}
-\frac{\operatorname{Tr}[L_y(I_A\otimes J_{C,i})]}
-{\operatorname{Tr}L_y}.
+\frac{\mathrm{Tr}[L_y(I_A\otimes J_{C,i})]}
+{\mathrm{Tr}L_y}.
 ```
 
 The largest eigenvalue of a directional spin component is $`n/2`$, so
@@ -73,20 +73,20 @@ The conditional minimum error is therefore exactly $`q`$ for every outcome. The 
 
 ## Sharpness of the threshold
 
-Suppose $`n\geq1`$ and $`q>1/(n+2)`$. Include the nonzero training effect
+Suppose $`n\geq1`$ and $`q\gt 1/(n+2)`$. Include the nonzero training effect
 
 ```math
 L=e\,
 |\uparrow\rangle\langle\uparrow|_A^{\otimes n}
 \otimes
 |\downarrow\rangle\langle\downarrow|_C^{\otimes n},
-\qquad 0<e\leq1,
+\qquad 0\lt e\leq1,
 ```
 
 and its positive complement. On this outcome the two posterior Bloch vectors are opposite and have length $`n/(n+2)`$. Thus
 
 ```math
-|p\mathbf a-q\mathbf c|=\frac n{n+2}>p-q.
+|p\mathbf a-q\mathbf c|=\frac n{n+2}\gt p-q.
 ```
 
 The conditional Helstrom decision strictly improves on the majority rule. The event has positive probability $`e/(n+1)^2`$; use the majority rule on every other outcome. The overall risk is strictly below $`q`$.
@@ -104,7 +104,7 @@ R\leq(1-\eta)q.
 Let $`n_{\rm C}(q,\eta)`$ be the least number of training copies per class sufficient for that target. The threshold gives the necessary condition
 
 ```math
-n_{\rm C}(q,\eta)>\frac1q-2.
+n_{\rm C}(q,\eta)\gt \frac1q-2.
 ```
 
 For a matching-order upper bound, ignore the minority training register. Perform the usual covariant pure-state estimation measurement on the $`n`$ majority copies. Its average fidelity is $`(n+1)/(n+2)`$. On the test, predict the minority label only when the projector orthogonal to the estimated majority state clicks. The majority false-positive probability is $`1/(n+2)`$, while the independent Haar minority clicks with probability $`1/2`$. Hence
@@ -146,7 +146,7 @@ R_{\rm comparison}
 q\,\frac{n+2}{2(n+1)}.
 ```
 
-Thus any fixed $`\eta<1/2`$ is reached with
+Thus any fixed $`\eta\lt 1/2`$ is reached with
 
 ```math
 n\geq\frac{2\eta}{1-2\eta},
