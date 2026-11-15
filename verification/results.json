@@ -1,0 +1,772 @@
+{
+  "status": "passed",
+  "run_at_utc": "2026-11-15T07:14:08.738850+00:00",
+  "command": "python verification/run_all.py",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "random_seed": 20261115,
+  "absolute_matrix_tolerance": 3e-10,
+  "script_sha256": "2eb1f0c33d94cb658bb1f22e85285d88162ca0c0ade9089f90431845fe98475c",
+  "elapsed_seconds": 1.6002195259970904,
+  "limits": [
+    "Finite floating-point checks do not prove universal n, prior, or noise statements.",
+    "Grid LP is a finite feasible measurement optimization; dense analytic duals certify only the tested floating-point instances.",
+    "No interval arithmetic, hosted-rendering verification, hardware benchmarking, or exhaustive priority review is performed.",
+    "The reference is consumed by one prediction; no repeated-use advantage is tested."
+  ],
+  "checks": {
+    "dense_global_and_npt": {
+      "tested_n": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "priors": [
+        0,
+        0.1,
+        0.49,
+        0.5,
+        0.51,
+        0.6,
+        0.8,
+        0.99,
+        1
+      ],
+      "max_jordan_vs_dense_bias_error": 8.881784197001252e-16,
+      "max_entry_change_with_finer_sphere_rule": 3.608224830031759e-16,
+      "npt_examples": [
+        {
+          "n": 1,
+          "p": 0.51,
+          "quantum_risk": 0.3489861438521691,
+          "minority_effect_partial_transpose_min_eigenvalue": -0.4370141970317924,
+          "zero_diagonal_row_norm_after_partial_transpose": 0.47274763294577293
+        },
+        {
+          "n": 1,
+          "p": 0.6,
+          "quantum_risk": 0.2880367018819777,
+          "minority_effect_partial_transpose_min_eigenvalue": -0.4593122735852696,
+          "zero_diagonal_row_norm_after_partial_transpose": 0.48322412239714685
+        },
+        {
+          "n": 1,
+          "p": 0.8,
+          "quantum_risk": 0.14724747683480544,
+          "minority_effect_partial_transpose_min_eigenvalue": -0.49101491623863497,
+          "zero_diagonal_row_norm_after_partial_transpose": 0.49667606011375787
+        },
+        {
+          "n": 1,
+          "p": 0.99,
+          "quantum_risk": 0.007493718711923503,
+          "minority_effect_partial_transpose_min_eigenvalue": -0.4999810622792482,
+          "zero_diagonal_row_norm_after_partial_transpose": 0.49999365570574034
+        },
+        {
+          "n": 2,
+          "p": 0.51,
+          "quantum_risk": 0.29218474238725994,
+          "minority_effect_partial_transpose_min_eigenvalue": -0.3845327196712677,
+          "zero_diagonal_row_norm_after_partial_transpose": 0.4913040514446598
+        },
+        {
+          "n": 2,
+          "p": 0.6,
+          "quantum_risk": 0.2450384429891172,
+          "minority_effect_partial_transpose_min_eigenvalue": -0.3912178490780952,
+          "zero_diagonal_row_norm_after_partial_transpose": 0.49912520893171924
+        },
+        {
+          "n": 2,
+          "p": 0.8,
+          "quantum_risk": 0.12870007013500018,
+          "minority_effect_partial_transpose_min_eigenvalue": -0.3722901154784085,
+          "zero_diagonal_row_norm_after_partial_transpose": 0.4919887213991282
+        },
+        {
+          "n": 2,
+          "p": 0.99,
+          "quantum_risk": 0.006656712866705772,
+          "minority_effect_partial_transpose_min_eigenvalue": -0.3353143587438336,
+          "zero_diagonal_row_norm_after_partial_transpose": 0.4724554327214957
+        },
+        {
+          "n": 3,
+          "p": 0.51,
+          "quantum_risk": 0.26173756550328564,
+          "minority_effect_partial_transpose_min_eigenvalue": -0.36210010637307927,
+          "zero_diagonal_row_norm_after_partial_transpose": 0.49617701592103847
+        },
+        {
+          "n": 3,
+          "p": 0.6,
+          "quantum_risk": 0.22261027280814405,
+          "minority_effect_partial_transpose_min_eigenvalue": -0.35714224157368973,
+          "zero_diagonal_row_norm_after_partial_transpose": 0.49945422072483353
+        },
+        {
+          "n": 3,
+          "p": 0.8,
+          "quantum_risk": 0.11935869124521936,
+          "minority_effect_partial_transpose_min_eigenvalue": -0.305721242947109,
+          "zero_diagonal_row_norm_after_partial_transpose": 0.4703416853952118
+        },
+        {
+          "n": 3,
+          "p": 0.99,
+          "quantum_risk": 0.006238177933551636,
+          "minority_effect_partial_transpose_min_eigenvalue": -0.25236901683991875,
+          "zero_diagonal_row_norm_after_partial_transpose": 0.4346516842368804
+        },
+        {
+          "n": 4,
+          "p": 0.51,
+          "quantum_risk": 0.24286575550266726,
+          "minority_effect_partial_transpose_min_eigenvalue": -0.34954498667624573,
+          "zero_diagonal_row_norm_after_partial_transpose": 0.4980859545571159
+        },
+        {
+          "n": 4,
+          "p": 0.6,
+          "quantum_risk": 0.20895567282963656,
+          "minority_effect_partial_transpose_min_eigenvalue": -0.33503767087363656,
+          "zero_diagonal_row_norm_after_partial_transpose": 0.49651140922006093
+        },
+        {
+          "n": 4,
+          "p": 0.8,
+          "quantum_risk": 0.11375809341947718,
+          "minority_effect_partial_transpose_min_eigenvalue": -0.2610913294004217,
+          "zero_diagonal_row_norm_after_partial_transpose": 0.44797042659214925
+        },
+        {
+          "n": 4,
+          "p": 0.99,
+          "quantum_risk": 0.005987081242051828,
+          "minority_effect_partial_transpose_min_eigenvalue": -0.2023389480929931,
+          "zero_diagonal_row_norm_after_partial_transpose": 0.40194417142167216
+        }
+      ]
+    },
+    "one_copy_classical_optimization": {
+      "seed_grid_size": 4252,
+      "clifford_rotations": 24,
+      "rows": [
+        {
+          "p": 0.5,
+          "s": 0.0,
+          "formula_bias": 0.28867513459481287,
+          "finite_physical_seed_lp_bias": 0.28867513459481303,
+          "formula_minus_lp": -1.6653345369377348e-16,
+          "dense_dual_min_slack_eigenvalue": -2.7755575615628914e-16,
+          "finite_clifford_povm_bias": 0.2886751345948127,
+          "training_outcomes": 24
+        },
+        {
+          "p": 0.525,
+          "s": 0.050000000000000044,
+          "formula_bias": 0.28867513459481287,
+          "finite_physical_seed_lp_bias": 0.28867513459481314,
+          "formula_minus_lp": -2.7755575615628914e-16,
+          "dense_dual_min_slack_eigenvalue": 0.0,
+          "finite_clifford_povm_bias": 0.2886751345948127,
+          "training_outcomes": 24
+        },
+        {
+          "p": 0.5962250448649377,
+          "s": 0.19245008972987532,
+          "formula_bias": 0.28867513459481287,
+          "finite_physical_seed_lp_bias": 0.2886751345948131,
+          "formula_minus_lp": -2.220446049250313e-16,
+          "dense_dual_min_slack_eigenvalue": -3.608224830031759e-16,
+          "finite_clifford_povm_bias": 0.28867513459481253,
+          "training_outcomes": 48
+        },
+        {
+          "p": 0.6,
+          "s": 0.19999999999999996,
+          "formula_bias": 0.28888888888888886,
+          "finite_physical_seed_lp_bias": 0.2888888499984863,
+          "formula_minus_lp": 3.8890402564994986e-08,
+          "dense_dual_min_slack_eigenvalue": -2.498001805406602e-16,
+          "finite_clifford_povm_bias": 0.28888888888888825,
+          "training_outcomes": 48
+        },
+        {
+          "p": 0.625,
+          "s": 0.25,
+          "formula_bias": 0.2986111111111111,
+          "finite_physical_seed_lp_bias": 0.2986110784338881,
+          "formula_minus_lp": 3.267722298305742e-08,
+          "dense_dual_min_slack_eigenvalue": -2.7755575615628914e-17,
+          "finite_clifford_povm_bias": 0.2986111111111106,
+          "training_outcomes": 48
+        },
+        {
+          "p": 0.6666666666666666,
+          "s": 0.33333333333333326,
+          "formula_bias": 0.3333333333333333,
+          "finite_physical_seed_lp_bias": 0.33333333333333326,
+          "formula_minus_lp": 5.551115123125783e-17,
+          "dense_dual_min_slack_eigenvalue": 0.0,
+          "finite_clifford_povm_bias": 0.3333333333333329,
+          "training_outcomes": 48
+        },
+        {
+          "p": 0.8,
+          "s": 0.6000000000000001,
+          "formula_bias": 0.6000000000000001,
+          "finite_physical_seed_lp_bias": 0.6000000000000002,
+          "formula_minus_lp": -1.1102230246251565e-16,
+          "dense_dual_min_slack_eigenvalue": 0.0,
+          "finite_clifford_povm_bias": 0.6000000000000001,
+          "training_outcomes": 1
+        },
+        {
+          "p": 1.0,
+          "s": 1.0,
+          "formula_bias": 1.0,
+          "finite_physical_seed_lp_bias": 1.0,
+          "formula_minus_lp": 0.0,
+          "dense_dual_min_slack_eigenvalue": 0.0,
+          "finite_clifford_povm_bias": 1,
+          "training_outcomes": 1
+        }
+      ]
+    },
+    "plateau_dual_and_attaining_seed": {
+      "tested_n": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "bias_points_per_n": [
+        "0",
+        "s0/2",
+        "s0"
+      ],
+      "rows": [
+        {
+          "n": 1,
+          "certified_s0": 0.19245008972987523,
+          "balanced_bias": 0.28867513459481287,
+          "minimum_tested_magnetic_block_dual_slack": -6.245004513516506e-17,
+          "covariant_seed_twirl_coefficient_max_error": 1.3877787807814457e-16,
+          "gap_at_s0": 0.06503826947697905,
+          "analytic_gap_lower_bound_at_s0": 0.06415002990995841
+        },
+        {
+          "n": 2,
+          "certified_s0": 0.1118033988749895,
+          "balanced_bias": 0.40558683776365384,
+          "minimum_tested_magnetic_block_dual_slack": 3.937399154496807e-17,
+          "covariant_seed_twirl_coefficient_max_error": 2.914335439641036e-16,
+          "gap_at_s0": 0.0286317914422671,
+          "analytic_gap_lower_bound_at_s0": 0.027950849718747374
+        },
+        {
+          "n": 3,
+          "certified_s0": 0.06299407883487121,
+          "balanced_bias": 0.46846101274191754,
+          "minimum_tested_magnetic_block_dual_slack": 3.665678015233401e-17,
+          "covariant_seed_twirl_coefficient_max_error": 6.938893903907228e-17,
+          "gap_at_s0": 0.012915256167364997,
+          "analytic_gap_lower_bound_at_s0": 0.012598815766974242
+        },
+        {
+          "n": 4,
+          "certified_s0": 0.041666666666666664,
+          "balanced_bias": 0.5075217450063738,
+          "minimum_tested_magnetic_block_dual_slack": 2.661320799930934e-16,
+          "covariant_seed_twirl_coefficient_max_error": 1.249000902703301e-16,
+          "gap_at_s0": 0.0071181421869925265,
+          "analytic_gap_lower_bound_at_s0": 0.006944444444444444
+        },
+        {
+          "n": 5,
+          "certified_s0": 0.03015113445777636,
+          "balanced_bias": 0.5340469311268221,
+          "minimum_tested_magnetic_block_dual_slack": 3.6224830828707313e-16,
+          "covariant_seed_twirl_coefficient_max_error": 2.1510571102112408e-16,
+          "gap_at_s0": 0.004413287366169583,
+          "analytic_gap_lower_bound_at_s0": 0.00430730492253948
+        },
+        {
+          "n": 6,
+          "certified_s0": 0.02311250817605121,
+          "balanced_bias": 0.5531874118523079,
+          "minimum_tested_magnetic_block_dual_slack": 1.8956986190105437e-16,
+          "covariant_seed_twirl_coefficient_max_error": 7.979727989493313e-17,
+          "gap_at_s0": 0.0029586602780974913,
+          "analytic_gap_lower_bound_at_s0": 0.002889063522006401
+        },
+        {
+          "n": 7,
+          "certified_s0": 0.01844277783908294,
+          "balanced_bias": 0.5676232112799703,
+          "minimum_tested_magnetic_block_dual_slack": 1.0952594683582261e-16,
+          "covariant_seed_twirl_coefficient_max_error": 6.245004513516506e-17,
+          "gap_at_s0": 0.002097444009504734,
+          "analytic_gap_lower_bound_at_s0": 0.002049197537675882
+        },
+        {
+          "n": 8,
+          "certified_s0": 0.01515847656477081,
+          "balanced_bias": 0.5788832049748566,
+          "minimum_tested_magnetic_block_dual_slack": -1.5473491106625867e-16,
+          "covariant_seed_twirl_coefficient_max_error": 1.0234868508263162e-16,
+          "gap_at_s0": 0.0015507153095675186,
+          "analytic_gap_lower_bound_at_s0": 0.001515847656477081
+        }
+      ]
+    },
+    "rare_class_and_sample_cost": {
+      "tested_n": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "matrix_checks": [
+        {
+          "n": 1,
+          "random_effect_posterior_eigenvalue_range": [
+            0.3347684394818855,
+            0.6652315605181145
+          ],
+          "allowed_posterior_eigenvalue_range": [
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "boundary_weighted_posterior_min_eigenvalue": -1.3421050017933367e-33,
+          "strict_weighted_posterior_min_eigenvalue": 0.16666666666666669,
+          "classical_risk_above_threshold": 0.3408333333333333,
+          "majority_risk_above_threshold": 0.3433333333333333,
+          "comparison_false_positive_probability": -6.476300976980079e-17,
+          "comparison_minority_recall": 0.24999999999999994,
+          "covariant_estimation_false_positive_probability": 0.33333333333333354
+        },
+        {
+          "n": 2,
+          "random_effect_posterior_eigenvalue_range": [
+            0.3229803227639672,
+            0.6770196772360323
+          ],
+          "allowed_posterior_eigenvalue_range": [
+            0.25,
+            0.75
+          ],
+          "boundary_weighted_posterior_min_eigenvalue": -2.7755575615628926e-17,
+          "strict_weighted_posterior_min_eigenvalue": 0.12499999999999997,
+          "classical_risk_above_threshold": 0.2588888888888889,
+          "majority_risk_above_threshold": 0.26,
+          "comparison_false_positive_probability": 1.3484206246911586e-16,
+          "comparison_minority_recall": 0.33333333333333337,
+          "covariant_estimation_false_positive_probability": 0.25000000000000033
+        },
+        {
+          "n": 3,
+          "random_effect_posterior_eigenvalue_range": [
+            0.28235149403612975,
+            0.717648505963871
+          ],
+          "allowed_posterior_eigenvalue_range": [
+            0.2,
+            0.8
+          ],
+          "boundary_weighted_posterior_min_eigenvalue": -1.1102230246251565e-16,
+          "strict_weighted_posterior_min_eigenvalue": 0.09999999999999999,
+          "classical_risk_above_threshold": 0.20937500000000003,
+          "majority_risk_above_threshold": 0.21000000000000002,
+          "comparison_false_positive_probability": 3.29465238545102e-17,
+          "comparison_minority_recall": 0.3750000000000002,
+          "covariant_estimation_false_positive_probability": 0.2000000000000002
+        },
+        {
+          "n": 4,
+          "random_effect_posterior_eigenvalue_range": [
+            0.35204306381501915,
+            0.6479569361849802
+          ],
+          "allowed_posterior_eigenvalue_range": [
+            0.16666666666666666,
+            0.8333333333333334
+          ],
+          "boundary_weighted_posterior_min_eigenvalue": 2.220446049250312e-16,
+          "strict_weighted_posterior_min_eigenvalue": 0.08333333333333343,
+          "classical_risk_above_threshold": 0.17626666666666663,
+          "majority_risk_above_threshold": 0.17666666666666667,
+          "comparison_false_positive_probability": -4.029716136055012e-17,
+          "comparison_minority_recall": 0.3999999999999997,
+          "covariant_estimation_false_positive_probability": 0.16666666666666602
+        }
+      ],
+      "sample_cost_examples": [
+        {
+          "q": 0.1,
+          "target_fraction_eta": 0.25,
+          "classical_necessary_n_lower_bound": 9,
+          "classical_constructive_n_upper_bound": 34,
+          "comparison_sufficient_quantum_n": 1
+        },
+        {
+          "q": 0.01,
+          "target_fraction_eta": 0.25,
+          "classical_necessary_n_lower_bound": 99,
+          "classical_constructive_n_upper_bound": 394,
+          "comparison_sufficient_quantum_n": 1
+        },
+        {
+          "q": 0.001,
+          "target_fraction_eta": 0.25,
+          "classical_necessary_n_lower_bound": 999,
+          "classical_constructive_n_upper_bound": 3994,
+          "comparison_sufficient_quantum_n": 1
+        },
+        {
+          "q": 0.0001,
+          "target_fraction_eta": 0.25,
+          "classical_necessary_n_lower_bound": 9999,
+          "classical_constructive_n_upper_bound": 39994,
+          "comparison_sufficient_quantum_n": 1
+        }
+      ],
+      "boundary_qualification": "Risk q at equality; uniquely majority-only decisions require strict q<1/(n+2)."
+    },
+    "finite_noise_continuity": {
+      "n": 1,
+      "p": 0.6,
+      "depolarization_eta": 0.01,
+      "pure_quantum_risk": 0.28803670188197755,
+      "pure_classical_risk": 0.35555555555555557,
+      "pure_gap": 0.06751885367357802,
+      "averaged_hypothesis_trace_distances": [
+        0.004974999999999592,
+        0.004974999999999591
+      ],
+      "product_state_continuity_delta": 0.014925124999999984,
+      "noisy_quantum_optimal_risk_dense": 0.29125977151452614,
+      "noisy_feasible_classical_strategy_risk": 0.35831944444444486,
+      "guaranteed_noisy_gap_lower_bound": 0.05259372867357803,
+      "qualification": "Classical monotonicity plus quantum continuity gives pure_gap-delta; no optimization of the noisy classical interface or fixed-noise large-n assertion."
+    },
+    "fixed_prior_asymptotic_algebra": {
+      "pure_pair_algebra_samples": 600,
+      "max_V_identity_error": 1.1102230246251565e-15,
+      "max_C_identity_error": 4.440892098500626e-16,
+      "sphere_integrals": [
+        {
+          "s": 0.01,
+          "direct_integral_V_over_4D": 0.3333663366336636,
+          "I_over_2": 0.33336633663366333,
+          "direct_integral_2C_over_4D": 0.02552815374531525,
+          "J_over_2": 0.02552815374531499,
+          "direct_integral_H": 0.35889449037897886,
+          "I_plus_J_over_2": 0.3588944903789783,
+          "quadrature_reported_error_sum": 2.5790056790277244e-14,
+          "A_lower_coefficient": 0.030528153745314993,
+          "I_upper_coefficient": 0.6667326732673267
+        },
+        {
+          "s": 0.05,
+          "direct_integral_V_over_4D": 0.3341269841269841,
+          "I_over_2": 0.3341269841269841,
+          "direct_integral_2C_over_4D": 0.0875810093622555,
+          "J_over_2": 0.08758100936225541,
+          "direct_integral_H": 0.4217079934892396,
+          "I_plus_J_over_2": 0.4217079934892395,
+          "quadrature_reported_error_sum": 4.656554640041303e-15,
+          "A_lower_coefficient": 0.1125810093622554,
+          "I_upper_coefficient": 0.6682539682539682
+        },
+        {
+          "s": 0.2,
+          "direct_integral_V_over_4D": 0.3444444444444444,
+          "I_over_2": 0.3444444444444445,
+          "direct_integral_2C_over_4D": 0.21764978254521866,
+          "J_over_2": 0.2176497825452188,
+          "direct_integral_H": 0.562094226989663,
+          "I_plus_J_over_2": 0.5620942269896633,
+          "quadrature_reported_error_sum": 6.2407744389766895e-15,
+          "A_lower_coefficient": 0.3176497825452188,
+          "I_upper_coefficient": 0.688888888888889
+        },
+        {
+          "s": 0.6,
+          "direct_integral_V_over_4D": 0.40833333333333327,
+          "I_over_2": 0.40833333333333327,
+          "direct_integral_2C_over_4D": 0.3894495111403081,
+          "J_over_2": 0.3894495111403081,
+          "direct_integral_H": 0.7977828444736415,
+          "I_plus_J_over_2": 0.7977828444736415,
+          "quadrature_reported_error_sum": 1.1483547164655077e-14,
+          "A_lower_coefficient": 0.6894495111403081,
+          "I_upper_coefficient": 0.8166666666666665
+        },
+        {
+          "s": 0.9,
+          "direct_integral_V_over_4D": 0.47543859649122805,
+          "I_over_2": 0.4754385964912281,
+          "direct_integral_2C_over_4D": 0.4745380634001149,
+          "J_over_2": 0.47453806340011506,
+          "direct_integral_H": 0.949976659891343,
+          "I_plus_J_over_2": 0.9499766598913432,
+          "quadrature_reported_error_sum": 1.0546859606678705e-14,
+          "A_lower_coefficient": 0.924538063400115,
+          "I_upper_coefficient": 0.9508771929824562
+        },
+        {
+          "s": 0.99,
+          "direct_integral_V_over_4D": 0.4975041876046901,
+          "I_over_2": 0.4975041876046901,
+          "direct_integral_2C_over_4D": 0.4974957913308147,
+          "J_over_2": 0.497495791330816,
+          "direct_integral_H": 0.9949999789355048,
+          "I_plus_J_over_2": 0.9949999789355062,
+          "quadrature_reported_error_sum": 1.1046718861157431e-14,
+          "A_lower_coefficient": 0.992495791330816,
+          "I_upper_coefficient": 0.9950083752093802
+        }
+      ],
+      "quantum_benchmark_convergence": [
+        {
+          "s": 0.05,
+          "claimed_quantum_limit_coefficient": 0.3091269841269841,
+          "convergence": [
+            {
+              "n": 1000,
+              "n_times_quantum_excess_over_oracle": 0.31023451268485935,
+              "difference_from_limit": 0.0011075285578752703
+            },
+            {
+              "n": 4000,
+              "n_times_quantum_excess_over_oracle": 0.30940738230000875,
+              "difference_from_limit": 0.0002803981730246652
+            },
+            {
+              "n": 16000,
+              "n_times_quantum_excess_over_oracle": 0.30919717859756446,
+              "difference_from_limit": 7.019447058037587e-05
+            },
+            {
+              "n": 64000,
+              "n_times_quantum_excess_over_oracle": 0.30914453642694184,
+              "difference_from_limit": 1.755229995775709e-05
+            }
+          ]
+        },
+        {
+          "s": 0.2,
+          "claimed_quantum_limit_coefficient": 0.2444444444444445,
+          "convergence": [
+            {
+              "n": 1000,
+              "n_times_quantum_excess_over_oracle": 0.2444217888802891,
+              "difference_from_limit": -2.2655564155399377e-05
+            },
+            {
+              "n": 4000,
+              "n_times_quantum_excess_over_oracle": 0.24443886232550227,
+              "difference_from_limit": -5.582118942221159e-06
+            },
+            {
+              "n": 16000,
+              "n_times_quantum_excess_over_oracle": 0.244443053904142,
+              "difference_from_limit": -1.3905403024871976e-06
+            },
+            {
+              "n": 64000,
+              "n_times_quantum_excess_over_oracle": 0.2444440971203221,
+              "difference_from_limit": -3.4732412237947763e-07
+            }
+          ]
+        },
+        {
+          "s": 0.6,
+          "claimed_quantum_limit_coefficient": 0.10833333333333328,
+          "convergence": [
+            {
+              "n": 1000,
+              "n_times_quantum_excess_over_oracle": 0.10823895551287377,
+              "difference_from_limit": -9.437782045951248e-05
+            },
+            {
+              "n": 4000,
+              "n_times_quantum_excess_over_oracle": 0.10830972638831149,
+              "difference_from_limit": -2.360694502179239e-05
+            },
+            {
+              "n": 16000,
+              "n_times_quantum_excess_over_oracle": 0.1083274308157911,
+              "difference_from_limit": -5.902517542177854e-06
+            },
+            {
+              "n": 64000,
+              "n_times_quantum_excess_over_oracle": 0.10833185765335429,
+              "difference_from_limit": -1.4756799789905628e-06
+            }
+          ]
+        },
+        {
+          "s": 0.9,
+          "claimed_quantum_limit_coefficient": 0.025438596491228094,
+          "convergence": [
+            {
+              "n": 1000,
+              "n_times_quantum_excess_over_oracle": 0.025413669178242504,
+              "difference_from_limit": -2.492731298558981e-05
+            },
+            {
+              "n": 4000,
+              "n_times_quantum_excess_over_oracle": 0.025432360172938928,
+              "difference_from_limit": -6.236318289165599e-06
+            },
+            {
+              "n": 16000,
+              "n_times_quantum_excess_over_oracle": 0.025437037129982798,
+              "difference_from_limit": -1.559361245295765e-06
+            },
+            {
+              "n": 64000,
+              "n_times_quantum_excess_over_oracle": 0.025438206630923332,
+              "difference_from_limit": -3.8986030476140243e-07
+            }
+          ]
+        }
+      ],
+      "finite_estimation_upper_bound_examples": [
+        {
+          "s": 0.01,
+          "n": 1,
+          "independent_covariant_estimation_excess": 0.22224311320020884,
+          "finite_upper_bound_I_over_n_plus_2": 0.2222442244224422
+        },
+        {
+          "s": 0.01,
+          "n": 4,
+          "independent_covariant_estimation_excess": 0.11112201497927568,
+          "finite_upper_bound_I_over_n_plus_2": 0.1111221122112211
+        },
+        {
+          "s": 0.01,
+          "n": 20,
+          "independent_covariant_estimation_excess": 0.030306025905620815,
+          "finite_upper_bound_I_over_n_plus_2": 0.030306030603060304
+        },
+        {
+          "s": 0.05,
+          "n": 1,
+          "independent_covariant_estimation_excess": 0.22261208576998048,
+          "finite_upper_bound_I_over_n_plus_2": 0.22275132275132273
+        },
+        {
+          "s": 0.05,
+          "n": 4,
+          "independent_covariant_estimation_excess": 0.11136347813979391,
+          "finite_upper_bound_I_over_n_plus_2": 0.11137566137566136
+        },
+        {
+          "s": 0.05,
+          "n": 20,
+          "independent_covariant_estimation_excess": 0.03037459178248647,
+          "finite_upper_bound_I_over_n_plus_2": 0.030375180375180375
+        },
+        {
+          "s": 0.2,
+          "n": 1,
+          "independent_covariant_estimation_excess": 0.2203703703703704,
+          "finite_upper_bound_I_over_n_plus_2": 0.22962962962962966
+        },
+        {
+          "s": 0.2,
+          "n": 4,
+          "independent_covariant_estimation_excess": 0.11400462962962968,
+          "finite_upper_bound_I_over_n_plus_2": 0.11481481481481483
+        },
+        {
+          "s": 0.2,
+          "n": 20,
+          "independent_covariant_estimation_excess": 0.031273989898989996,
+          "finite_upper_bound_I_over_n_plus_2": 0.03131313131313132
+        },
+        {
+          "s": 0.6,
+          "n": 1,
+          "independent_covariant_estimation_excess": 0.10833333333333328,
+          "finite_upper_bound_I_over_n_plus_2": 0.2722222222222222
+        },
+        {
+          "s": 0.6,
+          "n": 4,
+          "independent_covariant_estimation_excess": 0.10329861111111105,
+          "finite_upper_bound_I_over_n_plus_2": 0.1361111111111111
+        },
+        {
+          "s": 0.6,
+          "n": 20,
+          "independent_covariant_estimation_excess": 0.03553598484848475,
+          "finite_upper_bound_I_over_n_plus_2": 0.03712121212121212
+        },
+        {
+          "s": 0.9,
+          "n": 1,
+          "independent_covariant_estimation_excess": 0.02543859649122815,
+          "finite_upper_bound_I_over_n_plus_2": 0.3169590643274854
+        },
+        {
+          "s": 0.9,
+          "n": 4,
+          "independent_covariant_estimation_excess": 0.02543859649122815,
+          "finite_upper_bound_I_over_n_plus_2": 0.1584795321637427
+        },
+        {
+          "s": 0.9,
+          "n": 20,
+          "independent_covariant_estimation_excess": 0.025200159489633223,
+          "finite_upper_bound_I_over_n_plus_2": 0.04322169059011165
+        },
+        {
+          "s": 0.99,
+          "n": 1,
+          "independent_covariant_estimation_excess": 0.002504187604690178,
+          "finite_upper_bound_I_over_n_plus_2": 0.3316694584031267
+        },
+        {
+          "s": 0.99,
+          "n": 4,
+          "independent_covariant_estimation_excess": 0.002504187604690178,
+          "finite_upper_bound_I_over_n_plus_2": 0.16583472920156336
+        },
+        {
+          "s": 0.99,
+          "n": 20,
+          "independent_covariant_estimation_excess": 0.002504187604690178,
+          "finite_upper_bound_I_over_n_plus_2": 0.04522765341860819
+        }
+      ],
+      "coefficient_compatibility_grid_points": 1000,
+      "minimum_I_minus_A_on_grid": 2.086663730693772e-09,
+      "qualification": "Finite algebra, quadrature and benchmark checks only. These do not prove the integrated Bayesian Holevo converse, its regularity assumptions, or an exact classical leading coefficient."
+    },
+    "no_training": {
+      "tested_n": 0,
+      "risk": "min(p,1-p)",
+      "priors": [
+        0,
+        0.1,
+        0.5,
+        0.7,
+        1
+      ]
+    }
+  }
+}
