@@ -21,6 +21,13 @@ Question: when can quantum training from two unknown pure qubit classes be compi
 - Prior work and related supplied-state models: references/related_work.md; references/references.bib.
 - Reproduction and finite-check limits: verification/README.md; verification/run_all.py; verification/results.json.
 
+## Shared learning route
+- One selected educational anchor: John Watrous, The Theory of Quantum Information (2018), standard-layout author manuscript.
+- learning/README.md connects the route.
+- learning/WATROUS_BRIDGE.md gives verified sections, notation and the locally supplied steps.
+- learning/MILESTONES.md has exactly M01–M30: 12 background plus 18 narrative milestones, with earlier-only conceptual dependencies.
+- learning/TUTORIAL.md follows one complete three-qubit experiment into the general boundary and quantitative limits.
+
 ## Preserve the qualifiers
 - Balanced finite-n equality is inherited; every other interior prior has strict retained-example advantage.
 - Fixed-prior gap has matching order 1/n, with a liminf lower coefficient and finite upper bound. The exact leading classical coefficient is not established.
