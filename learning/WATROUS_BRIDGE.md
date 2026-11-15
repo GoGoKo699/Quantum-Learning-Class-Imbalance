@@ -25,13 +25,13 @@ Watrous uses vector/operator notation rather than Dirac notation.
 
 | Textbook notation or convention | Translation here |
 |---|---|
-| A unit column vector $`u`$ and $`uu^*`$ | $`|\psi\rangle`$ and $`P_\psi=|\psi\rangle\langle\psi|`$. The star denotes conjugate transpose. |
+| A unit column vector $`u`$ and $`uu^*`$ | $`\lvert\psi\rangle`$ and $`P_\psi=\lvert\psi\rangle\langle\psi\rvert`$. The star denotes conjugate transpose. |
 | $`\mathrm D(\mathcal X)`$ and $`\operatorname{Pos}(\mathcal X)`$ | Density operators and positive semidefinite operators. A POVM effect need not have trace one. |
-| A measurement $`\mu(a)`$ | $`L_y`$ for training, then $`D_{i|y}`$ for the test. |
+| A measurement $`\mu(a)`$ | $`L_y`$ for training, then $`D_{i\mid y}`$ for the test. |
 | The prior $`\lambda`$ in Theorem3.4 | $`p`$ for class0 and $`q=1-p`$ for class1. The prior is known before training and is separate from the fixed training counts. |
 | Generic known hypotheses $`\rho_0,\rho_1`$ | The Haar-averaged program-plus-test operators $`\sigma_0,\sigma_1`$. The particular unknown prototypes remain $`P_0,P_1`$. |
 | $`\langle A,B\rangle=\operatorname{Tr}(A^*B)`$ | For a Hermitian effect and state, the Born probability is $`\operatorname{Tr}(E\rho)`$. |
-| Raw trace norm $`\|X\|_1`$ | Classification bias uses this norm directly. The state trace distance in the noise bound includes a factor $`1/2`$. |
+| Raw trace norm $`\lVert X\rVert_1`$ | Classification bias uses this norm directly. The state trace distance in the noise bound includes a factor $`1/2`$. |
 | Partial transpose of one factor | $`T_B`$ transposes the test across $`AC:B`$. Transposing the other factor gives the equivalent PPT criterion. |
 
 The textbook theorem gives success; the project reports error:
