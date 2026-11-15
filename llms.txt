@@ -1,0 +1,29 @@
+# Quantum Learning Class Imbalance
+
+Question: when can quantum training from two unknown pure qubit classes be compiled losslessly into an unrestricted classical record for one future test?
+
+## Essential model
+- science/model.md: independent Haar prototypes, n native labeled copies per class, known deployment prior, one test and one output label.
+- Classical competitor: arbitrary collective training POVM, unlimited classical record/computation, arbitrary conditional test POVM; no surviving quantum training information.
+- Retained quantum comparator may consume its actual examples. No QRAM, state descriptions, preparation inverses or reusable-model promise.
+
+## Authoritative routes
+- Story: README.md -> science/model.md -> science/interpretation.md.
+- Finite boundary: science/activation.md.
+- Exact global benchmark, credited to programmable discrimination: science/quantum_benchmark.md.
+- All-classical-record optimization, finite duality and balanced attainment: science/classical_training.md.
+- Exact n=1 classical phases and finite covariant POVMs: science/one_copy.md.
+- Nonzero all-n plateau and explicit quantitative bound: science/plateau.md.
+- Fixed interior prior, n to infinity: science/asymptotic.md.
+- Rare-class threshold and fixed-fraction sample saving: science/rare_class.md.
+- Finite prototype-depolarization continuity: science/noise.md.
+- Specimens, persistent storage, Schur compression, circuit/preprocessing cost and precision: science/resources.md.
+- Prior work and related supplied-state models: references/related_work.md; references/references.bib.
+- Reproduction and finite-check limits: verification/README.md; verification/run_all.py; verification/results.json.
+
+## Preserve the qualifiers
+- Balanced finite-n equality is inherited; every other interior prior has strict retained-example advantage.
+- Fixed-prior gap has matching order 1/n, with a liminf lower coefficient and finite upper bound. The exact leading classical coefficient is not established.
+- Classical no-improvement risk holds at the rare-class threshold, but zero minority recall/unique majority decisions require strict inequality.
+- Haar-average one-test accuracy and sample costs do not imply worst-case arbitrary-source, reusable-program, fixed-noise asymptotic or hardware-runtime advantage.
+
