@@ -4,7 +4,7 @@ The [finite-training activation theorem](activation.md) is an exact statement ab
 
 ## Statement and limiting order
 
-Use the [prediction model](model.md), exchange class labels so that $`p>q>0`$, and set $`s=p-q\in(0,1)`$. Let $`R_{\rm or}(s)`$ denote the known-prototype error. Define
+Use the [prediction model](model.md), exchange class labels so that $`p\gt q\gt 0`$, and set $`s=p-q\in(0,1)`$. Let $`R_{\rm or}(s)`$ denote the known-prototype error. Define
 
 ```math
 I(s)=\frac{2(1+s+s^2)}{3(1+s)},\qquad
@@ -17,7 +17,7 @@ For every fixed $`s\in(0,1)`$,
 ```math
 \boxed{
 \liminf_{n\to\infty}n\bigl(R_{\rm C}(n,s)-R_{\rm Q}(n,s)\bigr)
-\geq A(s)>0
+\geq A(s)\gt 0
 }
 ```
 
@@ -69,7 +69,7 @@ The constant majority and minority guesses have excess $`(D-s)/2`$ and $`(D+s)/2
 
 This also covers general final qubit POVMs. If an effect has eigenvalues $`\lambda_{\min}\leq\lambda_{\max}`$, it is a convex mixture of the extreme effects $`I`$, a rank-one projector, and $`0`$, with weights $`\lambda_{\min}`$, $`\lambda_{\max}-\lambda_{\min}`$, and $`1-\lambda_{\max}`$. The risk is linear in that effect.
 
-Choose a small compact coordinate patch $`U`$ on which $`D-s\geq\gamma>0`$. Let $`e_0`$ be the axis at its center, and shrink the patch until
+Choose a small compact coordinate patch $`U`$ on which $`D-s\geq\gamma\gt 0`$. Let $`e_0`$ be the axis at its center, and shrink the patch until
 
 ```math
 \sup_{\theta\in U}\frac D4|e(\theta)-e_0|^2\leq\frac\gamma2.
@@ -109,9 +109,9 @@ V=p^2c_0^2+q^2c_1^2+p^2+q^2
 ```
 
 ```math
-C=\operatorname{Im}\langle x_l,x_k\rangle
+C=\mathrm{Im}\langle x_l,x_k\rangle
 =p^2c_0+q^2c_1
-=\frac{s(1+D^2)}{2D}>0.
+=\frac{s(1+D^2)}{2D}\gt 0.
 ```
 
 Extra components in the normal direction $`|11\rangle`$ cannot reduce the Holevo cost: their summed squared norms are at least twice the absolute value of their imaginary covariance. The triangle inequality then gives
@@ -135,7 +135,7 @@ The direction target alone induces a rank-two weight on a four-parameter model. 
 
 ```math
 \frac D4|\widehat e-e|^2+\varepsilon|\widehat\theta-\theta|^2,
-\qquad \varepsilon>0.
+\qquad \varepsilon\gt 0.
 ```
 
 Its induced chart weight is
@@ -157,15 +157,15 @@ Z_0=I_4+i\Omega,\qquad
 Let $`G\succ0`$ be a weight in these normalized coordinates. Any other locally unbiased response adds a positive Gram matrix $`W`$ from the normal components. For such a Gram matrix,
 
 ```math
-\operatorname{Tr}(G\operatorname{Re}W)
-\geq\left\|i\sqrt G(\operatorname{Im}W)\sqrt G\right\|_1.
+\mathrm{Tr}(G\mathrm{Re}W)
+\geq\left\lVert i\sqrt G(\mathrm{Im}W)\sqrt G\right\rVert_1.
 ```
 
 Indeed the positive matrix $`\sqrt G W\sqrt G`$ and its complex conjugate imply that its real part dominates both signs of its Hermitian imaginary part; taking positive and negative spectral projections gives the trace bound. The trace-norm triangle inequality now proves the full-parameter Holevo formula
 
 ```math
-C_G=\operatorname{Tr}G+
-\operatorname{Tr}\left|i\sqrt G\Omega\sqrt G\right|.
+C_G=\mathrm{Tr}G+
+\mathrm{Tr}\left|i\sqrt G\Omega\sqrt G\right|.
 ```
 
 A real optimal covariance field is
@@ -183,11 +183,11 @@ V_0-Z_0=G^{-1/2}(|H|-H)G^{-1/2}\succeq0.
 
 The matrix $`|H|=\sqrt{H^2}`$ is real symmetric positive definite: $`H`$ is Hermitian and invertible because $`G`$ and $`\Omega`$ are invertible, and $`H^2`$ is real positive definite. Thus $`V_0`$ is real positive definite and its cost equals $`C_G`$. Principal square roots and inverses are smooth on positive-definite matrices, including at repeated eigenvalues. A smooth invertible congruence transfers this covariance field from the normalized tangent frame to any compact coordinate chart.
 
-For each fixed $`\varepsilon>0`$, the augmented weight, this optimal covariance field, and their derivatives are bounded on the compact patch. Consequently the matrix field used in the Gill–Guță van Trees proof, $`\mathsf C=\widetilde G\Psi'V_0`$, is smooth and bounded there. Choose compact smooth bump priors that vanish faster than any power at their boundary. The derivatives of the bump contribute only polynomial inverse-boundary factors, so the prior-information integral in their equation (16) is finite. This closes that theorem's regularity condition for the present model.
+For each fixed $`\varepsilon\gt 0`$, the augmented weight, this optimal covariance field, and their derivatives are bounded on the compact patch. Consequently the matrix field used in the Gill–Guță van Trees proof, $`\mathsf C=\widetilde G\Psi'V_0`$, is smooth and bounded there. Choose compact smooth bump priors that vanish faster than any power at their boundary. The derivatives of the bump contribute only polynomial inverse-boundary factors, so the prior-information integral in their equation (16) is finite. This closes that theorem's regularity condition for the present model.
 
 ## Removing the nuisance weight with charged additional data
 
-Suppose the candidate direction estimator uses $`n`$ pairs. For a fixed $`\delta>0`$, append $`m=\lfloor\delta n\rfloor`$ additional independent pairs only to estimate the full coordinate vector. Separate Pauli measurements followed by chart projection give, on the compact patch,
+Suppose the candidate direction estimator uses $`n`$ pairs. For a fixed $`\delta\gt 0`$, append $`m=\lfloor\delta n\rfloor`$ additional independent pairs only to estimate the full coordinate vector. Separate Pauli measurements followed by chart projection give, on the compact patch,
 
 ```math
 \sup_{\theta\in U}\mathbb E_\theta
@@ -215,7 +215,7 @@ The additional copies are a conservative proof device. Their count is included i
 
 ## Integrating the lower bound
 
-Temporarily restrict to a compact subset away from identical or antipodal prototypes and chart boundaries. Cover it by finitely many patches satisfying the action-replacement inequality. Take nonnegative smooth partition weights whose sum is at most one everywhere and equals one on that compact subset. Apply the patch lower bound to each weighted Haar prior and sum. Classification excess is nonnegative, so discarding the uncovered parameter region is valid. Increase the compact subsets to full Haar measure. For fixed $`s>0`$, $`D\geq s`$ makes $`\mathcal H`$ integrable.
+Temporarily restrict to a compact subset away from identical or antipodal prototypes and chart boundaries. Cover it by finitely many patches satisfying the action-replacement inequality. Take nonnegative smooth partition weights whose sum is at most one everywhere and equals one on that compact subset. Apply the patch lower bound to each weighted Haar prior and sum. Classification excess is nonnegative, so discarding the uncovered parameter region is valid. Increase the compact subsets to full Haar measure. For fixed $`s\gt 0`$, $`D\geq s`$ makes $`\mathcal H`$ integrable.
 
 This gives a Bayesian bound for arbitrary learner sequences, including approximate minimizers of the global risk:
 

@@ -16,7 +16,7 @@ The [one-copy example](one_copy.md) makes the response quantitative. Near balanc
 
 | Regime | Supported statement |
 |---|---|
-| Fixed finite $`n`$, prior tilted away from balance | Strict risk advantage for every $`0<|2p-1|<1`$. |
+| Fixed finite $`n`$, prior tilted away from balance | Strict risk advantage for every $`0\lt\lvert2p-1\rvert\lt1`$. |
 | Fixed nonzero interior tilt, $`n`$ grows | The optimal memory penalty has order $`1/n`$, with a positive asymptotic lower coefficient and a finite upper bound. The exact leading coefficient is open. |
 | Minority probability decreases and a fixed fractional reduction of its risk is required | Classical training costs order $`1/q`$ copies per class; a constant number of retained references suffices. |
 

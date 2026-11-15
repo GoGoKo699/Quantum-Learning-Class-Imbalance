@@ -33,6 +33,12 @@ Start with the [experiment and interfaces](science/model.md), then follow the [c
 
 The [interpretation](science/interpretation.md) explains the signed-sector mechanism and the distinct prevalence/training limits. The [resource account](science/resources.md) includes supplied copies, retained memory, coherent compression, known decision synthesis and consumption. [Related work](references/related_work.md) separates inherited ingredients from the contribution; [BibTeX](references/references.bib) records the sources. [llms.txt](llms.txt) maps questions to the authoritative pages.
 
+## Learn the result
+
+The single educational anchor is **John Watrous, *The Theory of Quantum Information* (2018)**, using the standard-layout author manuscript.
+
+Start with the [worked three-qubit experiment](learning/TUTORIAL.md), use the [Watrous bridge](learning/WATROUS_BRIDGE.md) for verified textbook locations and notation, and follow the [30-milestone map](learning/MILESTONES.md) from foundations to the complete result. The map has 12 background milestones and 18 research milestones, with the asymptotic theorem distinguished from its open exact coefficient. The [learning overview](learning/README.md) connects these routes.
+
 ## Reproduce the finite checks
 
 With Python 3.12 or later:

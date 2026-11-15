@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "run_at_utc": "2026-11-15T07:14:08.738850+00:00",
+  "run_at_utc": "2026-11-15T07:42:32.464193+00:00",
   "command": "python verification/run_all.py",
   "python": "3.12.14",
   "numpy": "2.3.5",
@@ -9,7 +9,7 @@
   "random_seed": 20261115,
   "absolute_matrix_tolerance": 3e-10,
   "script_sha256": "2eb1f0c33d94cb658bb1f22e85285d88162ca0c0ade9089f90431845fe98475c",
-  "elapsed_seconds": 1.6002195259970904,
+  "elapsed_seconds": 1.5056185250032286,
   "limits": [
     "Finite floating-point checks do not prove universal n, prior, or noise statements.",
     "Grid LP is a finite feasible measurement optimization; dense analytic duals certify only the tested floating-point instances.",

@@ -21,7 +21,7 @@ s,&\dfrac13\leq s\leq1.
 \end{cases}
 ```
 
-The first interval is an exact risk plateau. In the last interval no measured-training classifier improves on always choosing the more frequent label. At the boundary $`s=1/3`$, some posterior test decisions can tie that risk while producing minority predictions; strict $`s>1/3`$ forces the majority decision for every nonzero-probability training outcome.
+The first interval is an exact risk plateau. In the last interval no measured-training classifier improves on always choosing the more frequent label. At the boundary $`s=1/3`$, some posterior test decisions can tie that risk while producing minority predictions; strict $`s\gt 1/3`$ forces the majority decision for every nonzero-probability training outcome.
 
 For comparison, the inherited global programmable-discrimination optimum is
 
@@ -31,7 +31,7 @@ D_{\rm Q}(s)=\frac{2s}{3}+\frac{\sqrt{3+s^2}}6,
 R_{\rm Q}(1,p)=\frac{1-D_{\rm Q}(s)}2.
 ```
 
-It follows either from the three-qubit spectrum or the general Jordan-basis calculation of [He and Bergou (2007)](https://doi.org/10.1103/PhysRevA.75.032316). The new optimization here concerns the measured-training interface. The two risks agree at $`s=0,1`$ and satisfy $`R_{\rm C}>R_{\rm Q}`$ throughout $`0<s<1`$.
+It follows either from the three-qubit spectrum or the general Jordan-basis calculation of [He and Bergou (2007)](https://doi.org/10.1103/PhysRevA.75.032316). The new optimization here concerns the measured-training interface. The two risks agree at $`s=0,1`$ and satisfy $`R_{\rm C}\gt R_{\rm Q}`$ throughout $`0\lt s\lt 1`$.
 
 ## Posterior states produced by a training effect
 
@@ -53,7 +53,7 @@ The optimal conditional test bias is consequently
 
 ```math
 g(v)=
-\left\|p\bar\rho_{0|v}-q\bar\rho_{1|v}\right\|_1
+\left\lVert p\bar\rho_{0|v}-q\bar\rho_{1|v}\right\rVert_1
 =
 \max\!\left\{s,\frac{|p\mathbf a-q\mathbf c|}{3}\right\}.
 ```
@@ -114,7 +114,7 @@ Thus the remaining problem is a scalar moment optimization: maximize the average
 
 If $`s\geq1/3`$, then $`h(u)\leq1/3\leq s`$, so the answer is $`D_{\rm C}=s`$.
 
-For $`0<s<1/3`$, the concave envelope joins $`(0,s)`$ tangentially to $`h`$, follows $`h`$, and uses the reflected tangent to $`(1,s)`$. The left contact point solves
+For $`0\lt s\lt 1/3`$, the concave envelope joins $`(0,s)`$ tangentially to $`h`$, follows $`h`$, and uses the reflected tangent to $`(1,s)`$. The left contact point solves
 
 ```math
 h(u_*)-u_*h'(u_*)=s,
@@ -163,7 +163,7 @@ The covariance average can be made a finite POVM by a qubit unitary two-design; 
 
 ## Interpretation
 
-At equal priors the classical and quantum optima coincide, as in [Sentís et al. (2012)](https://doi.org/10.1038/srep00708). For small $`s>0`$ the classical optimum remains on its plateau, while the global optimum exploits the newly signed symmetric sector. Quantitatively,
+At equal priors the classical and quantum optima coincide, as in [Sentís et al. (2012)](https://doi.org/10.1038/srep00708). For small $`s\gt 0`$ the classical optimum remains on its plateau, while the global optimum exploits the newly signed symmetric sector. Quantitatively,
 
 ```math
 R_{\rm C}(1,p)-R_{\rm Q}(1,p)

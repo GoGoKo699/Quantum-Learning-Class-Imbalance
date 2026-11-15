@@ -38,7 +38,7 @@ D_{\rm Q}=1-2R_{\rm Q}.
 
 A risk written as a function of $`s`$ uses this label symmetry; a risk written as a function of $`p`$ uses the original class prior. They refer to the same experiment. The minority probability is $`\min(p,q)`$.
 
-The main strictness theorem concerns every finite integer $`n\geq1`$ and $`0<p<1`$. At $`p=0,1`$, the label is known and risk is zero. At $`n=0`$, both averaged test states equal $`I/2`$, so both interfaces have risk $`\min(p,q)`$ for every prior. At $`p=1/2`$, exact equality for pure qubits is the established result of Sentís et al.
+The main strictness theorem concerns every finite integer $`n\geq1`$ and $`0\lt p\lt 1`$. At $`p=0,1`$, the label is known and risk is zero. At $`n=0`$, both averaged test states equal $`I/2`$, so both interfaces have risk $`\min(p,q)`$ for every prior. At $`p=1/2`$, exact equality for pure qubits is the established result of Sentís et al.
 
 All risks are Bayesian for this fixed Haar source model. They are not worst-case risks for every pair of prototypes: identical prototypes cannot be classified at the same contrast as orthogonal ones.
 
