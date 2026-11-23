@@ -29,7 +29,7 @@ The fixed-prior theorem gives a positive asymptotic lower coefficient and a fini
 
 ## Several copies of the future query
 
-With a fixed number $`t`$ of copies of one future query, the [rare-class sample law](science/rare_class_query_copies.md) gives classical reference cost $`\Theta(q^{-1/t})`$ versus constant retained reference cost for the stated fixed fractional risk targets. [Quantum Reference Identification](https://github.com/GoGoKo699/Quantum-Reference-Identification/blob/11af03e486b5a5ff2bf5c304d50f6f9f54325815/science/prior_weighted_identification.md) proves the matching weighted-library threshold and extends strict quantum memory advantage to libraries with a unique most probable label.
+With a fixed number $`t`$ of copies of one future query, the [rare-class sample law](science/rare_class_query_copies.md) gives classical reference cost $`\Theta(q^{-1/t})`$ versus constant retained reference cost for the stated fixed fractional risk targets. [Quantum Reference Identification](https://github.com/GoGoKo699/Quantum-Reference-Identification/blob/d1b6e1583c5fba0dc757f3a75f0db622183315f8/science/prior_weighted_identification.md) proves the matching weighted-library threshold and extends strict quantum memory advantage to libraries with a unique most probable label.
 
 ## Read the science
 

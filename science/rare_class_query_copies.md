@@ -26,13 +26,13 @@ The query budget $`t`$ is fixed in this limit. The fractional improvement is mea
 
 ## The exact threshold gives the classical lower bound
 
-The [weighted identification theorem](https://github.com/GoGoKo699/Quantum-Reference-Identification/blob/11af03e486b5a5ff2bf5c304d50f6f9f54325815/science/prior_weighted_identification.md) gives $`R_{\mathrm C}=q`$ exactly when $`p/q\geq B`$, including equality. Its converse allows collective measurements of both references. The minimizer may include minority decisions that tie the majority risk at equality. For $`d=2,t=1`$ the condition reduces to $`p/q\geq m+1`$, or $`q\leq1/(m+2)`$, the original threshold.
+The [weighted identification theorem](https://github.com/GoGoKo699/Quantum-Reference-Identification/blob/d1b6e1583c5fba0dc757f3a75f0db622183315f8/science/prior_weighted_identification.md) gives $`R_{\mathrm C}=q`$ exactly when $`p/q\geq B`$, including equality. Its converse allows collective measurements of both references. The minimizer may include minority decisions that tie the majority risk at equality. For $`d=2,t=1`$ the condition reduces to $`p/q\geq m+1`$, or $`q\leq1/(m+2)`$, the original threshold.
 
 Any strictly positive fractional improvement therefore requires $`B\gt p/q`$. Since $`B\leq(m+t)^t/t!`$, the required $`m`$ is larger than $`(t!p/q)^{1/t}-t`$. This proves the lower order for every fixed $`\eta\gt0`$ that is attainable.
 
 ## Covariant estimation attains the classical order
 
-Measure the $`m`$ majority references with the covariant POVM $`D_m|\phi^{\otimes m}\rangle\langle\phi^{\otimes m}|\,d\phi`$, where $`d\phi`$ is normalized Haar measure. Given its outcome $`\phi`$, predict minority only when all $`t`$ query copies pass the projector onto $`\phi^\perp`$. This protocol ignores the minority references.
+Measure the $`m`$ majority references with the covariant POVM $`D_m|\phi^{\otimes m}\rangle\langle\phi^{\otimes m}|\,d\phi`$, where $`d\phi`$ is normalized Haar measure. Given its outcome $`\phi`$, predict minority only when all $`t`$ query copies pass the projector onto the orthogonal complement of $`\phi`$. This protocol ignores the minority references.
 
 Write $`(a)_t=a(a+1)\cdots(a+t-1)`$. For a majority query, the posterior overlap $`X=|\langle\phi|\psi_{\mathrm{maj}}\rangle|^2`$ has law $`\mathrm{Beta}(m+1,d-1)`$. Haar overlap has density proportional to $`(1-X)^{d-2}`$, and the measurement multiplies that density by $`X^m`$. Conditional on the unknown ray, the probability that all query copies pass is $`(1-X)^t`$. Averaging gives the majority false-positive probability $`(d-1)_t/(m+d)_t`$. For a minority query the ray remains independent Haar, so the true-positive probability is $`(d-1)_t/(d)_t=h_{d,t}`$. The exact risk of this protocol is
 
