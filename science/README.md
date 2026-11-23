@@ -10,8 +10,9 @@ The central question is whether a classical training record can retain everythin
 6. [Plateau](plateau.md): a sufficient interval of unchanged optimal classical risk and an explicit quantitative advantage.
 7. [Fixed-prior asymptotics](asymptotic.md): the order-$`1/n`$ memory penalty, positive lower coefficient, matching-order upper bound and proof assumptions.
 8. [Rare classes](rare_class.md): exact no-improvement threshold and constant-fraction sample costs.
-9. [Noise](noise.md): a finite depolarization neighborhood.
-10. [Resources](resources.md) and [interpretation](interpretation.md): paid realizations, consumption, physical meaning and limits.
+9. [Several copies of the same query](rare_class_query_copies.md): the classical rare-class sample exponent and comparison with a constant retained budget.
+10. [Noise](noise.md): a finite depolarization neighborhood.
+11. [Resources](resources.md) and [interpretation](interpretation.md): paid realizations, consumption, physical meaning and limits.
 
 The exact finite-size boundary, fixed-prior asymptotic regime and vanishing-minority regime have different quantifiers. The exact leading asymptotic coefficient remains open. The full attribution is in [related work](../references/related_work.md); the [verification route](../verification/README.md) distinguishes finite checks from the analytical proofs.
 

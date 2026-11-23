@@ -403,7 +403,47 @@ def check_rare_class():
                             'classical_constructive_n_upper_bound': upper_n,
                             'comparison_sufficient_quantum_n': quantum_n})
     return {'tested_n': [1, 2, 3, 4], 'matrix_checks': rows, 'sample_cost_examples': target_rows,
+            'several_query_copies': check_several_query_copies(),
             'boundary_qualification': 'Risk q at equality; uniquely majority-only decisions require strict q<1/(n+2).'}
+
+
+def check_several_query_copies():
+    rows = []
+    for dimension, copies, queries in [(2, 1, 1), (2, 1, 2), (2, 47, 2), (3, 3, 2), (5, 2, 4)]:
+        reference_rank = math.comb(dimension + copies - 1, copies)
+        query_rank = math.comb(dimension + queries - 1, queries)
+        combined_rank = math.comb(dimension + copies + queries - 1, copies + queries)
+        majority_pass, _ = quad(
+            lambda overlap: reference_rank * (dimension - 1)
+            * overlap**copies * (1 - overlap)**(dimension - 2 + queries),
+            0, 1, epsabs=1e-12,
+        )
+        minority_pass, _ = quad(
+            lambda overlap: (dimension - 1) * (1 - overlap)**(dimension - 2 + queries),
+            0, 1, epsabs=1e-12,
+        )
+        fp_formula = math.prod(range(dimension - 1, dimension - 1 + queries))
+        fp_formula /= math.prod(range(dimension + copies, dimension + copies + queries))
+        recall_formula = (dimension - 1) / (dimension + queries - 1)
+        assert abs(majority_pass - fp_formula) < ATOL
+        assert abs(minority_pass - recall_formula) < ATOL
+        rows.append({
+            'dimension': dimension, 'reference_copies': copies, 'query_copies': queries,
+            'covariant_false_positive_probability': majority_pass,
+            'covariant_minority_recall': minority_pass,
+            'retained_minor_label_error_probability': combined_rank / (reference_rank * query_rank),
+        })
+
+    # Worked example with q=1/100 and a one-quarter relative risk reduction.
+    assert math.comb(12 + 2, 2) <= 99 < math.comb(13 + 2, 2)
+    target = .75 * .01
+    assert .99 * 2 / (48 * 49) + .01 * 2 / 3 > target
+    assert .99 * rows[2]['covariant_false_positive_probability'] + .01 * 2 / 3 <= target
+    assert .01 * rows[1]['retained_minor_label_error_probability'] <= target
+    return {'overlap_quadrature': rows, 'worked_example': {
+        'q': .01, 'target_fraction_eta': .25, 'classical_necessary_m_lower_bound': 13,
+        'classical_constructive_m_upper_bound': 47, 'retained_sufficient_m': 1,
+    }}
 
 
 def noisy_states_one(eta):

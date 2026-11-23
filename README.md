@@ -27,6 +27,10 @@ The balanced equality is the established memory-free learning result of Sentís 
 
 The fixed-prior theorem gives a positive asymptotic lower coefficient and a finite upper bound of matching order. It does not determine the exact leading coefficient or a uniform crossover through balance. At the rare-class threshold itself, minority predictions may tie the majority risk; uniqueness requires strict inequality.
 
+## Several copies of the future query
+
+With a fixed number $`t`$ of copies of one future query, the [rare-class sample law](science/rare_class_query_copies.md) gives classical reference cost $`\Theta(q^{-1/t})`$ versus constant retained reference cost for the stated fixed fractional risk targets. [Quantum Reference Identification](https://github.com/GoGoKo699/Quantum-Reference-Identification/blob/11af03e486b5a5ff2bf5c304d50f6f9f54325815/science/prior_weighted_identification.md) proves the matching weighted-library threshold and extends strict quantum memory advantage to libraries with a unique most probable label.
+
 ## Read the science
 
 Start with the [experiment and interfaces](science/model.md), then follow the [connected scientific route](science/README.md). The [classical optimization](science/classical_training.md) gives an exact finite SDP over all permitted training records. The [quantum benchmark](science/quantum_benchmark.md) fixes the inherited programmable-discrimination formulas.

@@ -1,5 +1,7 @@
 # Rare classes: an exact classical threshold and a sample-cost separation
 
+The [several-query-copy extension](rare_class_query_copies.md) derives the corresponding sample law when the future query arrives in $`t`$ copies of the same state.
+
 ## Model and threshold
 
 Use the independent-Haar pure-qubit model in [class-prior activation](activation.md). The training set has $`n`$ labeled copies per class. Let the known minority test probability be $`q\in(0,1/2]`$, with majority probability $`p=1-q`$.

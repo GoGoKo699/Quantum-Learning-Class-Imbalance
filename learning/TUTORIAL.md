@@ -234,7 +234,9 @@ R_{\rm comparison}=q\frac{n+2}{2(n+1)}.
 
 A constant number depending on $`\beta`$ therefore reaches that fractional target independently of rarity. The reference is consumed, and the absolute error contrast still vanishes with $`q`$. Observing rare labeled events empirically may itself require order $`1/q`$ deployment trials per minority observation.
 
-**Sources:** [rare-class theorem and sample costs](../science/rare_class.md), [evaluation costs](../science/resources.md#rarity-and-the-cost-of-a-claimed-saving), and [universal-comparison attribution](../references/related_work.md).
+If the same query arrives as two qubits, the classical threshold becomes $`p/q\geq\binom{m+2}{2}`$, where $`m`$ is the training count per class. For $`q=1/100`$, reducing majority risk by 25% needs at least 13 measured references per class. A concrete covariant estimator with 47 reaches the target. The symmetry test with one retained majority reference gives risk $`2q/3`$ and already reaches it. With a fixed $`t`$, the same argument gives classical order $`q^{-1/t}`$ for the fractional targets specified in the extension.
+
+**Sources:** [rare-class theorem and sample costs](../science/rare_class.md), [several-copy example and proof](../science/rare_class_query_copies.md#worked-example-with-two-query-qubits), [evaluation costs](../science/resources.md#rarity-and-the-cost-of-a-claimed-saving), and [universal-comparison attribution](../references/related_work.md).
 
 ## Finite noise and paid implementation
 
