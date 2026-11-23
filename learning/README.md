@@ -29,6 +29,7 @@ Exchange class labels so that $`p\geq1/2`$. Write $`n`$ for the training copies 
 | Finite $`n\geq1`$, unequal interior prior | The optimal classical-record risk is strictly larger than the retained-quantum risk. |
 | A fixed unequal interior prior, then $`n\to\infty`$ | The gap has order $`\Theta_s(1/n)`$, with a positive lower coefficient. Its exact leading coefficient is open. |
 | Minority probability $`q\downarrow0`$ at a fixed fractional risk target | Classical training requires order $`1/q`$ copies per class; a constant number of consumed quantum references suffices through established comparison. |
+| The same rarity limit with fixed $`t`$ copies of one query | The [several-copy law](../science/rare_class_query_copies.md) changes the classical order to $`q^{-1/t}`$ for its stated fractional targets. The retained budget stays constant. |
 
 At the rare-class threshold equality, minority decisions may tie the majority risk. Finite-noise continuity does not establish a fixed-noise large-training theorem. The program can be consumed, and these advantages concern supplied quantum specimens rather than a generic classical-data speedup.
 

@@ -11,7 +11,7 @@ The script overwrites `verification/results.json` with the actual environment,
 timestamp, source-script SHA-256, parameters, numerical observations and limits.
 It uses only NumPy and SciPy, a fixed random seed, and local computation.
 
-The recorded run passed seven groups in approximately 1.5 seconds with Python
+The recorded run passed seven groups in approximately 1.7 seconds with Python
 3.12.14, NumPy 2.3.5 and SciPy 1.17.0. Its maximum discrepancy between the
 independently constructed dense-state trace norm and the Jordan-sum bias was
 8.9e-16. Runtime and the last few floating-point digits may vary by environment.
@@ -25,6 +25,7 @@ independently constructed dense-state trace norm and the Jordan-sum bias was
 | Finite classical plateau | Product-spin matrices and numerical total-spin eigenspaces; direct positive-semidefinite checks in every magnetic block; covariant seed normalization, twirl weights and payoff | n=1,...,8, at s=0,s0/2,s0; dense-integral payoff cross-checks for n<=4 |
 | Rare-class threshold | Posterior eigenvalues of actual training effects; an extremal collective-training outcome saturating the boundary; a two-outcome POVM giving strict improvement above it | n=1,...,4; 70 random rank-one effects per n and extremal effects |
 | Rare-class resource comparison | Dicke-isometry construction of the nonsymmetric comparison effect; direct false-positive and recall probabilities; quadrature of the covariant estimation protocol | n=1,...,4, plus integer sample-cost bounds at q=0.1,0.01,0.001,0.0001 |
+| Several copies of one query | Haar-overlap quadrature for the all-orthogonal covariant test, symmetric-space rank arithmetic for retained comparison, and the worked-example target check | Five (dimension, reference copies, query copies) choices, including the two-query-qubit example |
 | Finite noise and degenerate limits | Independently averaged depolarized three-qubit product states; trace distances and optimal global risk; a feasible classical POVM under noise; no-training direct state comparison | n=1,p=3/5,eta=0.01; n=0 at five priors |
 | Fixed-prior asymptotic algebra | Complex pure-pair tangent-response vectors versus scalar V,C identities; independent angular quadrature of H; large-n exact global-sum convergence; direct integration of the independent covariant-estimation upper strategy | 600 random pure pairs, six fixed interior biases, global sums through n=64000, and a 1000-point coefficient-compatibility grid |
 

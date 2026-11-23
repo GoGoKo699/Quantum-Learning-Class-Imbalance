@@ -16,6 +16,7 @@ Question: when can quantum training from two unknown pure qubit classes be compi
 - Nonzero all-n plateau and explicit quantitative bound: science/plateau.md.
 - Fixed interior prior, n to infinity: science/asymptotic.md.
 - Rare-class threshold and fixed-fraction sample saving: science/rare_class.md.
+- Several-copy query extension and the fixed-t rare-class exponent: science/rare_class_query_copies.md.
 - Finite prototype-depolarization continuity: science/noise.md.
 - Specimens, persistent storage, Schur compression, circuit/preprocessing cost and precision: science/resources.md.
 - Prior work and related supplied-state models: references/related_work.md; references/references.bib.
@@ -32,5 +33,6 @@ Question: when can quantum training from two unknown pure qubit classes be compi
 - Balanced finite-n equality is inherited; every other interior prior has strict retained-example advantage.
 - Fixed-prior gap has matching order 1/n, with a liminf lower coefficient and finite upper bound. The exact leading classical coefficient is not established.
 - Classical no-improvement risk holds at the rare-class threshold, but zero minority recall/unique majority decisions require strict inequality.
+- The several-copy q^(-1/t) order holds at fixed d,t and fraction 0<eta<(d-1)/(d+t-1). The t query copies encode the same test, and each prediction is charged those copies.
 - Haar-average one-test accuracy and sample costs do not imply worst-case arbitrary-source, reusable-program, fixed-noise asymptotic or hardware-runtime advantage.
 

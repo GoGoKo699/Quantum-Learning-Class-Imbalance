@@ -78,6 +78,7 @@ This minority-label effect is separable across $`AC:B`$, hence PPT. The classica
 | The full one-copy curve and physical attainment | [One-copy solution](../science/one_copy.md) |
 | A positive general-$`n`$ plateau around balance | [Classical optimization](../science/classical_training.md), [plateau](../science/plateau.md) |
 | Posterior-purity threshold and the rare-class limit | [Rare classes](../science/rare_class.md) |
+| Symmetric-support ranks and the impact of several copies of the same query on the rare-class limit | [Several-copy sample law](../science/rare_class_query_copies.md), using the Haar moment and symmetric-support facts in §7.1.1 and §7.2.1 |
 | Leading penalty at a fixed unequal prior | [Fixed-prior analysis](../science/asymptotic.md) |
 | Finite noise and paid logical implementation | [Noise](../science/noise.md), [resources](../science/resources.md) |
 | Inherited benchmark, tools and primitives | [Related work](../references/related_work.md) |

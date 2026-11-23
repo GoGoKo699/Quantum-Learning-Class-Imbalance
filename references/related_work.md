@@ -40,6 +40,8 @@ Pure-state covariant estimation and its fidelity $`(n+1)/(n+2)`$ are established
 
 The new rare-class statement is the exact no-improvement threshold for *every* classical training record and the matching order of the samples required for fixed fractional error reduction. The attaining quantum comparison mechanism is credited rather than counted again as a new protocol.
 
+The [several-copy extension](../science/rare_class_query_copies.md) uses the [weighted library threshold](https://github.com/GoGoKo699/Quantum-Reference-Identification/blob/d1b6e1583c5fba0dc757f3a75f0db622183315f8/science/prior_weighted_identification.md). The threshold draws on [Chiribella's symmetric posterior-channel identity](https://arxiv.org/abs/1010.1875) and the common-component method of [Anshu, Landau and Liu](https://arxiv.org/abs/2111.03273). The extension derives the classical rarity exponent from that threshold and an attainable covariant majority-reference procedure.
+
 Schur compression follows [Bacon, Chuang and Harrow](https://arxiv.org/abs/quant-ph/0407082). A loose paid dense decision-circuit realization uses standard unitary synthesis, including [Shende, Bullock and Markov](https://arxiv.org/abs/quant-ph/0406176). These ingredients make the statistical access model concrete; they do not prove a hardware runtime advantage.
 
 ## Related supplied-state classification results

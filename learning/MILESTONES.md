@@ -344,7 +344,7 @@ Dependencies name earlier milestones only. Source pointers lead to the canonical
 
 **Conceptual connection:** Finite-copy posterior uncertainty prevents an extreme likelihood ratio, even with unlimited classical records from a collective training measurement.
 
-**Source pointers:** [Rare-class statement and posterior bound](../science/rare_class.md); [threshold sharpness](../science/rare_class.md#sharpness-of-the-threshold); [one-copy boundary convention](../science/one_copy.md#the-phase-diagram).
+**Source pointers:** [Rare-class statement and posterior bound](../science/rare_class.md); [threshold sharpness](../science/rare_class.md#sharpness-of-the-threshold); [reduction from the several-copy threshold](../science/rare_class_query_copies.md#the-exact-threshold-gives-the-classical-lower-bound).
 
 ### M25: Price a fixed fractional minority-risk improvement
 
@@ -354,11 +354,13 @@ Dependencies name earlier milestones only. Source pointers lead to the canonical
 
 **Understanding target:** For each fixed target fraction $`0\lt \eta\lt 1/2`$, combine the arbitrary-classical-training lower bound with an estimating strategy to obtain $`\Theta_\eta(1/q)`$ copies per class. Explain why an established coherent state-comparison test attains the same target with a constant number of retained majority references, and keep the vanishing absolute contrast visible.
 
+For fixed dimension $`d`$ and $`t`$ copies of the same query, recover the $`q^{-1/t}`$ classical scaling for $`0\lt\eta\lt(d-1)/(d+t-1)`$. Use the binomial threshold for the lower bound and the all-orthogonal query event for the upper bound.
+
 **Dependencies and story role:** M03–M04, M24. Converts the rare-risk threshold into a resource comparison under a matched relative-error target.
 
 **Conceptual connection:** The new classical lower bound is distinct from the inherited universal-comparison protocol; the retained reference is consumed in one inference.
 
-**Source pointers:** [Classical fractional-improvement cost](../science/rare_class.md#constant-fractional-improvement-costs-order-1q-classical-training-copies); [retained-reference construction](../science/rare_class.md#a-retained-reference-avoids-the-rarity-dependent-cost); [rarity and evaluation costs](../science/resources.md#rarity-and-the-cost-of-a-claimed-saving); [attribution](../references/related_work.md).
+**Source pointers:** [Classical fractional-improvement cost](../science/rare_class.md#constant-fractional-improvement-costs-order-1q-classical-training-copies); [retained-reference construction](../science/rare_class.md#a-retained-reference-avoids-the-rarity-dependent-cost); [fixed query-copy extension](../science/rare_class_query_copies.md); [rarity and evaluation costs](../science/resources.md#rarity-and-the-cost-of-a-claimed-saving); [attribution](../references/related_work.md).
 
 ### M26: A finite noisy neighborhood of the advantage
 
