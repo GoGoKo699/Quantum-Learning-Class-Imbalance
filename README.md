@@ -14,6 +14,14 @@ p\in\{0,\tfrac12,1\}.
 
 The balanced equality is the established memory-free learning result of Sentís et al. The contribution here is the exact boundary of that classical sufficiency under changed class weights, together with quantitative risk and sample laws. The classical competitor may optimize an arbitrary collective training measurement for the known prior.
 
+## Make one prediction with retained specimens
+
+1. Take equal numbers of labeled pure qubits from the two sources. The training count and deployment prior are known. Apply a Schur transform to each bank, keep its compressed symmetric spin register until the test arrives, and discard the remaining registers in their fixed states.
+2. Use the count and prior to compute and diagonalize the [weighted average difference](science/quantum_benchmark.md#finite-training) classically. Compile the known eigenbasis change into rotations and entangling gates on the two compressed banks and the test qubit.
+3. Apply the basis change and measure in the computational basis. Return the first class for a positive eigenvalue and the second class for a negative eigenvalue. Either label has the same Bayes risk at zero. Every outcome gives a prediction, and the operation can consume the banks and test.
+
+The inherited programmable discriminator of He and Bergou gives the optimal average prediction error for the stated Haar source and known prior. The [implementation account](science/resources.md#coherent-compression-and-a-paid-realization) charges specimen preparation, coherent storage, classical preprocessing, gates, clean workspace and finite-precision error. The [three-qubit example](learning/TUTORIAL.md#a-complete-three-qubit-experiment) illustrates the separate singlet test used to expose the memory advantage.
+
 ## What is established
 
 | Result | Meaning | Scientific account |
